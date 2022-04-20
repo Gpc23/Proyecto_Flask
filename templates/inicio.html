@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Librería{% endblock %}
+{% block content %}
+<div class="posts">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>Gonzalo Peña Calero</h1>
+       						<h2>TAREA: Programa Librería</h2>
+						</header>
+						<ul>
+							{% for element in libros %}
+								{% if element.isbn %}
+									<li><a href="/libro/{{element.isbn}}">{{element.title}}</a></li>
+								{% else %}
+									<li><a href="/">{{element.title}} (No tiene ISBN)</a></li>
+								{% endif %}
+								<br>
+							{% endfor %}
+						</ul>
+					</section>
+			</div>
+{% endblock %}
