@@ -7,11 +7,7 @@
 
 		<!-- One -->
 			<section id="one">
-<<<<<<< HEAD
                 <a href="/">⟵ Go back</a>
-=======
-                <a href="/">⟵ Volver atrás</a>
->>>>>>> 21bf179bee962797fb42dfdf48ccdeb03511c1c9
 				<header class="major">
         <!-- Título -->
 		            <h1>{{libro.title}}</h1>
@@ -28,29 +24,17 @@
 
         <!--Páginas-->
 
-<<<<<<< HEAD
-                    <h3> Pages: {{libro.pageCount}}</h3><br>
-
-        <!--Descripción-->
-                    {% if libro.shortDescription %}
-                      <h4><strong>Description:</strong></h4>
-=======
                     <h3> Páginas: {{libro.pageCount}}</h3><br>
 
         <!--Descripción-->
                     {% if libro.shortDescription %}
                       <h4><strong>Descripción del libro:</strong></h4>
->>>>>>> 21bf179bee962797fb42dfdf48ccdeb03511c1c9
                        <p> {{libro.shortDescription}}</p><br>
                     {% endif %}
 
         <!--Autores-->
                     {% if libro.authors %}
-<<<<<<< HEAD
-                        <h4><strong>Authors:</strong></h4>
-=======
                         <h4><strong>Autor/Autores:</strong></h4>
->>>>>>> 21bf179bee962797fb42dfdf48ccdeb03511c1c9
                         {% for autor in libro.authors %}
                         <ul>
                             <li><p>{{autor}}</p></li>
@@ -60,11 +44,7 @@
 
         <!-- Categorías-->
                     {% if libro.categories %}
-<<<<<<< HEAD
-                        <h4><strong>Categories:</strong></h4>
-=======
                         <h4><strong>Categorias:</strong></h4>
->>>>>>> 21bf179bee962797fb42dfdf48ccdeb03511c1c9
                         {% for categoria in libro.categories %}
                         <ul>
                             <li><a href="/categoria/{{categoria}}">{{categoria}}</a></li>
